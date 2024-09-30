@@ -1,0 +1,161 @@
+/* Container */
+.summit-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 110px;
+  background: #000;
+  color: #fff;
+  padding-top: 0;
+  position: relative;
+}
+
+/* Text Section */
+.text-section {
+  width: 60%;
+}
+
+.text-section h1 {
+  color: #FFF;
+  font-family: "Bakbak One";
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 80px; 
+  text-transform: capitalize;
+}
+
+.text-section p {
+  color: var(--On-Surface, #FFF);
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 30px;
+}
+
+.connect-wallet {
+  border-radius: 160px;
+  background: linear-gradient(90deg, #FF1CEE 0%, #516AFF 100%);
+  color: #fff;
+}
+
+.whitelist-now {
+  background-color: transparent;
+  border-radius: 160px;
+  border: 2px solid #FF1CEE;
+  color: white;
+}
+
+.whitelist-now:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Image Section */
+.image-section {
+  width: 50%;
+}
+
+.image-section img {
+  width: 100%;
+}
+
+/* Triangular Background for the Image */
+.image-triangle-background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text Shadow */
+.text-shadow {
+  position: relative;
+  text-shadow:
+    -1px 0 4px rgba(81, 106, 255, 0.64),
+    1px 0 4px rgba(255, 28, 238, 0.64),
+    0 1px 4px rgba(255, 28, 238, 0.48),
+    0 -1px 4px rgba(81, 106, 255, 0.48),
+    0 -4px 8px rgba(81, 106, 255, 0.32),
+    0 -8px 12px rgba(255, 28, 238, 0.24),
+    0 -12px 16px rgba(81, 106, 255, 0.16),
+    0 -1px 0 rgba(46, 46, 46, 0.8),
+    0 -2px 0 rgba(44, 44, 44, 0.8),
+    0 -3px 0 rgba(42, 42, 42, 0.8),
+    0 -4px 0 rgba(40, 40, 40, 0.8),
+    0 -5px 0 rgba(38, 38, 38, 0.8),
+    0 -6px 0 rgba(36, 36, 36, 0.8),
+    0 -7px 0 rgba(34, 34, 34, 0.8),
+    0 -8px 0 rgba(32, 32, 32, 0.8),
+    0 -9px 0 rgba(30, 30, 30, 0.8),
+    0 -10px 0 rgba(28, 28, 28, 0.8),
+    0 -11px 0 rgba(26, 26, 26, 0.8),
+    0 -12px 0 rgba(24, 24, 24, 0.8),
+    0 -13px 0 rgba(22, 22, 22, 0.8),
+    0 -14px 0 rgba(20, 20, 20, 0.8),
+    0 -15px 0 rgba(18, 18, 18, 0.8),
+    0 -18px 24px rgba(0, 0, 0, 0.72);
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .summit-container {
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+
+  .text-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-section h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .text-section p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .image-section {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .image-section img {
+    width: 100%;
+    height: auto;
+  }
+}

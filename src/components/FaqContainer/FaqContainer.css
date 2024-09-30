@@ -131,6 +131,7 @@
     flex-direction: column;
   }
 
+
   .faq-image-section img, .circle-div {
     width: 300px;
     height: 300px;
@@ -150,6 +151,11 @@
 
   .accordion-answer {
     font-size: 0.9rem;
+  }
+
+  .accordion-item {
+    width: 100%;
+    padding: 10px;
   }
 }
 
